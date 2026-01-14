@@ -8,9 +8,9 @@ import lib
 
 top_cell = gdstk.Cell("top_cell")
 
-PINL100_01_origin = [750, 1000]
+PINL100_01_origin = [650, 1000]
 PINL100_02_origin = [250, 1000]
-PINL250_01_origin = [750,   50]
+PINL250_01_origin = [650,   50]
 PINL500_01_origin = [250,   50]
 
 top_cell.add(gdstk.Reference(lib.AIST_PDK["AIST_SwPINL100MZ22HT"], origin=PINL100_01_origin))
