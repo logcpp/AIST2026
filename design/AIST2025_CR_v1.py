@@ -4,7 +4,7 @@
 
 import gdstk
 import numpy as np
-import lib
+import lib_v1 as lib
 
 top_cell = gdstk.Cell("top_cell")
 

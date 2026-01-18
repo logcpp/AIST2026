@@ -1,8 +1,18 @@
 # AIST 2025 GDS design
 created on: 2026/01/10
-last change: 2026/01/10
+last change: 2026/01/18
 
 ## Checkpoints
 - FlexPath(..., tolerance=1e-3)
 - make vertical(), arc_\*() to add to ret_cell by default
 - check PIN injection-type P+ and N+ pad orientation
+
+- check PIN MZM pad configuration and RC constants -> for higher modulation speed
+- check 4x4 GC array optimized pitch for:
+	- 4 inputs -> 4x4 outputs
+	- 4x4 inputs -> 4x4 PD arrays (potential)
+
+## Experiments to do
+- GC 1x4 in -> GC 4x4 out (MVM)
+- GC 1x4 in -> GC 4x1 out (MVM)
+- GC 4x4 in -> SLM -> PD? (MVM)
