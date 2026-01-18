@@ -12,6 +12,12 @@ last change: 2026/01/18
 	- 4 inputs -> 4x4 outputs
 	- 4x4 inputs -> 4x4 PD arrays (potential)
 
+## Test patterns
+- 50 Ohm load
+- metal strip wires with different widths
+- PIN doped Si with different lengths
+- TiN MZM test patterns (w/ and w/o trench)
+
 ## Experiments to do
 - GC 1x4 in -> GC 4x4 out (MVM)
 - GC 1x4 in -> GC 4x1 out (MVM)
