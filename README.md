@@ -12,6 +12,9 @@ last change: 2026/01/18
 	- 4 inputs -> 4x4 outputs
 	- 4x4 inputs -> 4x4 PD arrays (potential)
 
+- place no dummy at SSC area with large MFD
+- dicing line 35~50 um width, including polishing length
+
 ## Test patterns
 - 50 Ohm load
 - metal coplanar waveguides
