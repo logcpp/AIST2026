@@ -169,24 +169,24 @@ top_cell.add(gdstk.Reference(PINL100TERM_02_route, origin=(0,0)))
 top_cell.add(gdstk.Reference(PINL200TERM_02_route, origin=(0,0)))
 top_cell.add(gdstk.Reference(PINL50GC_03_route, origin=(0,0)))
 
-# #---------- GC array routing ----------#
-# # GC 4x4 array
-# ssc_point = [
-	# ssc_right_origin[0] - lib.ssc_pitch*(16+21),
-	# ssc_right_origin[1] + lib.ssc_length + lib.dicing_length,
-# ]
-# GC4x4_route = lib.GC4x4_route_cell(GC_output_origin, GC_pitch, ssc_point, lib.LAYER_SiWG, "GC4x4_route")
-# top_cell.add(gdstk.Reference(GC4x4_route, origin=(0,0)))
-# # GC 4x1 output
-# ssc_point = [
-	# ssc_right_origin[0] - lib.ssc_pitch*(16+21),
-	# ssc_right_origin[1] + lib.ssc_length + lib.dicing_length,
-# ]
-# GC4x1output_route = lib.GC4x1output_route_cell(GC4x1_output_origin, GC_pitch, ssc_point, lib.LAYER_SiWG, "GC4x1output_route")
-# top_cell.add(gdstk.Reference(GC4x1output_route, origin=(0,0)))
-# # GC 1x4 input
-# GC1x4input_route = lib.GC1x4input_route_cell(GC_input_origin, GC_pitch, lib.LAYER_SiWG, "GC1x4input_route", PINL500_01_origin, PINL200_01_origin, PINL100TERM_02_origin, PINL200TERM_02_origin, pin_mzm_L500_end_o, pin_mzm_L200_end_o, pin_mzm_L100_TERM_end_o, pin_mzm_L200_TERM_end_o)
-# top_cell.add(gdstk.Reference(GC1x4input_route, origin=(0,0)))
+#---------- GC array routing ----------#
+# GC 4x4 array
+ssc_point = [
+	ssc_right_origin[0] - lib.ssc_pitch*(16+21),
+	ssc_right_origin[1] + lib.ssc_length + lib.dicing_length,
+]
+GC4x4_route = lib.GC4x4_route_cell(GC_output_origin, GC_pitch, ssc_point, lib.LAYER_SiWG, "GC4x4_route")
+top_cell.add(gdstk.Reference(GC4x4_route, origin=(0,0)))
+# GC 4x1 output
+ssc_point = [
+	ssc_right_origin[0] - lib.ssc_pitch*(16+21),
+	ssc_right_origin[1] + lib.ssc_length + lib.dicing_length,
+]
+GC4x1output_route = lib.GC4x1output_route_cell(GC4x1_output_origin, GC_pitch, ssc_point, lib.LAYER_SiWG, "GC4x1output_route")
+top_cell.add(gdstk.Reference(GC4x1output_route, origin=(0,0)))
+# GC 1x4 input
+GC1x4input_route = lib.GC1x4input_route_cell(GC_input_origin, GC_pitch, lib.LAYER_SiWG, "GC1x4input_route", PINL500_01_origin, PINL200_01_origin, PINL100TERM_02_origin, PINL200TERM_02_origin, pin_mzm_L500_end_o, pin_mzm_L200_end_o, pin_mzm_L100_TERM_end_o, pin_mzm_L200_TERM_end_o)
+top_cell.add(gdstk.Reference(GC1x4input_route, origin=(0,0)))
 
 
 #---------- RF calibration pattern ----------#
